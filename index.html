@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM SVG Canvas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="full-wrap">
+        <div class="box-wrap" >
+            <h2>Dom</h2>
+            <div class="box" style="background-color:cyan;">
+                <!-- <div class="rect" onclick='clickDom()'></div> -->
+                <!-- <div class="circle" onclick='clickDom()'></div> -->
+                <div class="star" onclick='clickDom()'></div>
+                <!-- <div class="text" onclick='clickDom()'>Hello Dom</div> -->
+            </div>
+        </div>
+        <div class="box-wrap" >
+            <h2>SVG</h2>
+            <svg class="box" style="background-color:magenta;">
+                <!-- <rect x="40%" y="40%" width="100" height="100" fill="green" onclick='clickSvg()' /> -->
+                <!-- <circle cx="50%" cy="50%" r="50" fill="green" onclick='clickSvg()'/> -->
+                <polygon points="250,160 190,330 340,210 160,210 310,330" fill="green" onclick='clickSvg()'/>
+                <!-- <text style="font: 50px sans-serif;" x="30%" y="50%" onclick='clickSvg()' >Hello SVG</text> -->
+            </svg>
+        </div>
+        <div class="box-wrap" >
+            <h2>Canvas</h2>
+            <canvas class="box" width="1000" height="1000" id="myCanvas" style="background-color:yellow;" onclick='clickCanvas(event)'>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
